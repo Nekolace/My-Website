@@ -202,7 +202,7 @@
 /* The stuff below here is just the little arrow guiding you gently into my achievement gallery. Pretty cool stuff! */
 
 .scroller-text-container {
-	width: 100%;
+	width: 40vw;
 }
 
 .scroller-text-container > h2 {
@@ -307,5 +307,13 @@
 			visibility: visible;
 			position: relative;
 		}
+	}
+
+	.intro-interactable-container {
+		width: 60vw;
+	}
+	.scroller-text-container {
+		width: 60vw;
+		margin-bottom: 50px;
 	}
 }

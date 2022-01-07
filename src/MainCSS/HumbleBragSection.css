@@ -29,7 +29,7 @@
 	font-size: 36px;
 	font-family: 'Inter', sans-serif;
 	font-weight: 500;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 25px;
 }
 
@@ -107,4 +107,70 @@
 	cursor: default;
 	transform: rotate3d(0, 0, 0, 0deg);
 	transform: scale(1.1);
+}
+
+/* Mobile Time. iPad sizing first. */
+
+@media screen and (max-width: 1030px) {
+	.card-showcase-container {
+		perspective: none;
+	}
+
+	.card-showcase {
+		transform: none;
+		height: 350px;
+		width: 350px;
+	}
+
+	.card-showcase:hover {
+		transform: none;
+	}
+
+	.card-showcase-container-right {
+		perspective: none;
+	}
+
+	.card-showcase-right {
+		transform: none;
+		height: 350px;
+		width: 350px;
+	}
+
+	.card-showcase-right:hover {
+		transform: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.card-container {
+		flex-direction: column;
+	}
+
+	.card-text-container {
+		width: 70vw;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card-text-container > h1 {
+		text-align: center;
+	}
+
+	.card-text-container > h2 {
+		text-align: center;
+	}
+
+	.card-showcase-container {
+		width: 70vw;
+		margin-top: 50px;
+	}
+
+	.card-container-right {
+		flex-direction: column;
+	}
+
+	.card-showcase-container-right {
+		width: 70vw;
+		margin-top: 50px;
+	}
 }
