@@ -1,4 +1,4 @@
-import './CSS/App.css';
+import './MainCSS/App.css';
 import React from 'react';
 import Home from './Viewables/Home'
 

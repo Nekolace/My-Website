@@ -1,4 +1,4 @@
-import '../CSS/Home.css';
+import '../MainCSS/Intro.css';
 import React from 'react';
 import linkedin from '../Assets/Images/linkedin.png'
 import email from '../Assets/Images/email.png'
@@ -17,7 +17,8 @@ export default class Intro extends React.Component{
         return(
             <div className="main-container">
 
-              {/* landing screen; all heights held constant */}
+              {/* landing screen*/}
+              
               <div className='intro-container'>
     
                 <div className='intro-text'>

@@ -1,15 +1,14 @@
 .main-container {
 	width: 100%;
-	background-color: azure;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow-x: hidden;
+	margin-bottom: 250px;
 }
 
 .intro-container {
 	width: 80vw;
-	background-color: bisque;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -18,10 +17,28 @@
 	overflow: hidden;
 }
 
+.intro-text > h1 {
+	color: #181818;
+	font-size: 72px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+
 .intro-blurb {
 	display: flex;
 	padding-top: 100px;
 }
+
+.intro-blurb > h2 {
+	color: #181818;
+	font-size: 36px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+/* CSS Below is for the dynamic shifting text that loads upon page start. (You don't have to look, it's just magic really.) */
 
 .blurb-dynamic-text {
 	overflow: hidden;
@@ -63,7 +80,6 @@
 	font-weight: 400;
 	text-align: end;
 	color: red;
-	background-color: blue;
 }
 
 .blurb-dynamic-text4 {
@@ -75,6 +91,8 @@
 	animation-duration: 11.66s;
 	animation-timing-function: steps(12, end);
 }
+
+/* CSS styling below is for the blinking caret at the end of the animated text  */
 
 .blurb-dynamic-text::after,
 .blurb-dynamic-text2::after,
@@ -88,6 +106,8 @@
 	animation-duration: 1s;
 	animation-timing-function: steps(1, end);
 }
+
+/* Below is the actual animation controls that make it all flow so beautifully, if I do say so myself. */
 
 @keyframes typewriter {
 	0%,
@@ -136,6 +156,8 @@
 	}
 }
 
+/* Below is the CSS for the 'interactables' (I.E. LinkedIn/Twitter) */
+
 .intro-interactable-container {
 	display: flex;
 	width: 40vw;
@@ -177,8 +199,18 @@
 	margin-top: 200px;
 }
 
+/* The stuff below here is just the little arrow guiding you gently into my achievement gallery. Pretty cool stuff! */
+
 .scroller-text-container {
 	width: 100%;
+}
+
+.scroller-text-container > h2 {
+	color: #181818;
+	font-size: 36px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	text-align: center;
 }
 
 .floating-scroller-container {
@@ -194,9 +226,11 @@
 	height: 65px;
 	animation: float infinite;
 	animation-timing-function: ease-in-out;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	opacity: 0.4;
 }
+
+/* IT CAN FLOAT! */
 
 @keyframes float {
 	0% {
@@ -209,6 +243,8 @@
 		transform: translate(0, -0px);
 	}
 }
+
+/* Mobile-friendliness is always a pain in the ass. But you'll find it below here. */
 
 @media screen and (max-width: 1000px) {
 	.intro-blurb {

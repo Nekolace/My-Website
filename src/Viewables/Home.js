@@ -1,6 +1,7 @@
-import '../CSS/Home.css';
+import '../MainCSS/Home.css';
 import React from 'react';
 import Intro from '../Sections/Intro'
+import HumbleBragSection from '../Sections/HumbleBragSection';
 
 export default class Home extends React.Component{
 
@@ -9,6 +10,7 @@ export default class Home extends React.Component{
         return(
           <div>
             <Intro/>
+            <HumbleBragSection/>
           </div>
         )
     }
