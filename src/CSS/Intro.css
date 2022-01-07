@@ -1,0 +1,275 @@
+.main-container {
+	width: 100%;
+	background-color: azure;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+.intro-container {
+	width: 80vw;
+	background-color: bisque;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	overflow: hidden;
+}
+
+.intro-blurb {
+	display: flex;
+	padding-top: 100px;
+}
+
+.blurb-dynamic-text {
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	width: 0;
+	position: relative;
+	animation: typewriter;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-timing-function: steps(6, end);
+}
+.blurb-dynamic-text2 {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 0;
+	display: inline-block;
+	position: relative;
+	animation: typewriter2;
+	animation-delay: 3s;
+	animation-duration: 1.33s;
+	animation-timing-function: steps(4, end);
+}
+.blurb-dynamic-text3 {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 0;
+	display: inline-block;
+	position: relative;
+	animation: typewriter3;
+	animation-delay: 4.33s;
+	animation-duration: 4.33s;
+	animation-timing-function: steps(22, end);
+}
+
+.intro-blurb > h3 {
+	font-size: 36px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 400;
+	text-align: end;
+	color: red;
+	background-color: blue;
+}
+
+.blurb-dynamic-text4 {
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	animation: typewriter4;
+	animation-duration: 11.66s;
+	animation-timing-function: steps(12, end);
+}
+
+.blurb-dynamic-text::after,
+.blurb-dynamic-text2::after,
+.blurb-dynamic-text3::after,
+.blurb-dynamic-text4::after {
+	content: '|';
+	position: absolute;
+	color: black;
+	right: 0;
+	animation: caret infinite;
+	animation-duration: 1s;
+	animation-timing-function: steps(1, end);
+}
+
+@keyframes typewriter {
+	0%,
+	100% {
+		width: 0;
+	}
+	50% {
+		width: 3em;
+	}
+}
+@keyframes typewriter2 {
+	0%,
+	100% {
+		width: 0;
+	}
+	50% {
+		width: 2em;
+	}
+}
+@keyframes typewriter3 {
+	0%,
+	100% {
+		width: 0;
+	}
+	50% {
+		width: 14em;
+	}
+}
+@keyframes typewriter4 {
+	0%,
+	75% {
+		width: 0;
+	}
+	100% {
+		width: 6em;
+	}
+}
+
+@keyframes caret {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.intro-interactable-container {
+	display: flex;
+	width: 40vw;
+	height: 95px;
+	margin-top: 150px;
+	justify-content: space-around;
+	align-items: center;
+
+	border-top: 1px solid rgba(24, 24, 24, 0.4);
+	border-bottom: 1px solid rgba(24, 24, 24, 0.4);
+}
+
+.linkedin-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	width: 65px;
+	transition: 0.3s;
+}
+
+.linkedin-container:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.linkedin {
+	object-fit: contain;
+	border-radius: 12px;
+}
+
+.intro-bottom-scroller {
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+	margin-top: 200px;
+}
+
+.scroller-text-container {
+	width: 100%;
+}
+
+.floating-scroller-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	width: 65px;
+}
+
+.floating-scroller {
+	object-fit: contain;
+	height: 65px;
+	animation: float infinite;
+	animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+	opacity: 0.4;
+}
+
+@keyframes float {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(0, 10px);
+	}
+	100% {
+		transform: translate(0, -0px);
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.intro-blurb {
+		flex-direction: column;
+	}
+	.blurb-dynamic-text,
+	.blurb-dynamic-text2,
+	.blurb-dynamic-text3 {
+		visibility: hidden;
+		position: absolute;
+	}
+	@keyframes typewriter {
+		0%,
+		100% {
+			width: 0;
+			visibility: visible;
+			position: relative;
+		}
+		50% {
+			width: 3em;
+			visibility: visible;
+			position: relative;
+		}
+	}
+	@keyframes typewriter2 {
+		0%,
+		100% {
+			width: 0;
+			visibility: visible;
+			position: relative;
+		}
+		50% {
+			width: 2em;
+			visibility: visible;
+			position: relative;
+		}
+	}
+	@keyframes typewriter3 {
+		0%,
+		100% {
+			width: 0;
+			visibility: visible;
+			position: relative;
+		}
+		50% {
+			width: 14em;
+			visibility: visible;
+			position: relative;
+		}
+	}
+	@keyframes typewriter4 {
+		0%,
+		75% {
+			width: 0;
+			visibility: visible;
+			position: relative;
+		}
+		100% {
+			width: 6em;
+			visibility: visible;
+			position: relative;
+		}
+	}
+}
