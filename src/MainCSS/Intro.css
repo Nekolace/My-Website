@@ -1,9 +1,6 @@
 .main-container {
 	width: 100%;
-<<<<<<< HEAD
 	min-height: 100vh;
-=======
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -200,11 +197,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 5px;
-<<<<<<< HEAD
 	margin-top: 100px;
-=======
-	margin-top: 200px;
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 }
 
 /* The stuff below here is just the little arrow guiding you gently into my achievement gallery. Pretty cool stuff! */
@@ -221,7 +214,6 @@
 	text-align: center;
 }
 
-<<<<<<< HEAD
 .scroller-text-container > h3 {
 	color: #181818;
 	font-size: 20px;
@@ -230,8 +222,6 @@
 	text-align: center;
 }
 
-=======
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 .floating-scroller-container {
 	display: flex;
 	justify-content: center;
@@ -265,11 +255,7 @@
 
 /* Mobile-friendliness is always a pain in the ass. But you'll find it below here. */
 
-<<<<<<< HEAD
 @media screen and (max-width: 1025px) {
-=======
-@media screen and (max-width: 1000px) {
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 	.intro-blurb {
 		flex-direction: column;
 	}

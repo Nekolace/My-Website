@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "short_name": "nick's site",
   "name": "Nicholas DiMeglio's Portfolio Website",
-=======
-  "short_name": "React App",
-  "name": "Create React App Sample",
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
   "icons": [
     {
       "src": "favicon.ico",

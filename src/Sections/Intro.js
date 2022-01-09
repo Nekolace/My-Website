@@ -18,11 +18,6 @@ export default class Intro extends React.Component{
             <div className="main-container">
 
               {/* landing screen*/}
-<<<<<<< HEAD
-
-=======
-              
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
               <div className='intro-container'>
     
                 <div className='intro-text'>
@@ -51,10 +46,7 @@ export default class Intro extends React.Component{
                 <div className='intro-bottom-scroller'>
                   <div className='scroller-text-container'>
                     <h2>Scroll on down for my greatest hits!</h2>
-<<<<<<< HEAD
                     <h3>Hover (or click, if on mobile) on the images to make them come to life and show you an animated preview!</h3>
-=======
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
                   </div>
                   <div className='floating-scroller-container'>
                     <img className='floating-scroller' src={scroller} alt='welp... this did not load. This is unfortunate.'/>

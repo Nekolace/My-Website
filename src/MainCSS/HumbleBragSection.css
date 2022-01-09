@@ -12,7 +12,6 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-<<<<<<< HEAD
 	margin-bottom: 175px;
 }
 
@@ -22,10 +21,6 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-=======
-
-	margin-bottom: 100px;
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 }
 
 .card-text-container {
@@ -62,7 +57,6 @@
 	text-align: left;
 }
 
-<<<<<<< HEAD
 .card-arrow-main-container {
 	width: 70vw;
 	display: flex;
@@ -101,12 +95,6 @@
 	width: 35vw;
 	display: flex;
 	justify-content: center;
-=======
-.card-showcase-container {
-	width: 35vw;
-	display: flex;
-	justify-content: flex-end;
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 	align-items: center;
 	perspective: 1000px;
 }
@@ -115,7 +103,6 @@
 	width: 550px;
 	height: 450px;
 	border-radius: 16px;
-<<<<<<< HEAD
 	transform: rotate3d(0, -1, 0, 10deg);
 	transition: 500ms;
 	background-color: #181818;
@@ -128,12 +115,6 @@
 	transform: rotate3d(0, -1, 0, 10deg);
 	transition: 500ms;
 	border: solid #181818 2px;
-=======
-	background-color: #181818;
-	opacity: 0.5;
-	transform: rotate3d(0, -1, 0, 10deg);
-	transition: 500ms;
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 }
 
 .card-showcase:hover {
@@ -142,7 +123,6 @@
 	transform: scale(1.1);
 }
 
-<<<<<<< HEAD
 .card-showcase-vertical:hover {
 	cursor: default;
 	transform: rotate3d(0, 0, 0, 0deg);
@@ -163,8 +143,6 @@
 	border-radius: 16px;
 }
 
-=======
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 /* Now for the cards that start with the showcase on the left. I'll call them -right. Because I want to. Don't judge me. */
 
 .card-container-right {
@@ -173,11 +151,7 @@
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: center;
-<<<<<<< HEAD
 	margin-bottom: 175px;
-=======
-	margin-bottom: 100px;
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 }
 
 .card-showcase-container-right {
@@ -193,25 +167,16 @@
 	height: 450px;
 	border-radius: 16px;
 	background-color: #181818;
-<<<<<<< HEAD
 	transform: rotate3d(0, 1, 0, 10deg);
 	transition: 500ms;
 	background-size: contain;
-=======
-	opacity: 0.5;
-	transform: rotate3d(0, 1, 0, 10deg);
-	transition: 500ms;
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 }
 
 .card-showcase-right:hover {
 	cursor: default;
 	transform: rotate3d(0, 0, 0, 0deg);
 	transform: scale(1.1);
-<<<<<<< HEAD
 	background-size: contain;
-=======
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 }
 
 /* Mobile Time. iPad sizing first. */
@@ -227,13 +192,6 @@
 		width: 350px;
 	}
 
-<<<<<<< HEAD
-=======
-	.card-showcase:hover {
-		transform: none;
-	}
-
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 	.card-showcase-container-right {
 		perspective: none;
 	}
@@ -243,7 +201,6 @@
 		height: 350px;
 		width: 350px;
 	}
-<<<<<<< HEAD
 	.card-arrow-container {
 		align-items: flex-end;
 	}
@@ -258,15 +215,6 @@
 	.first-card-container {
 		flex-direction: column;
 	}
-=======
-
-	.card-showcase-right:hover {
-		transform: none;
-	}
-}
-
-@media screen and (max-width: 700px) {
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 	.card-container {
 		flex-direction: column;
 	}
@@ -288,7 +236,6 @@
 	.card-showcase-container {
 		width: 70vw;
 		margin-top: 50px;
-<<<<<<< HEAD
 		justify-content: center;
 	}
 
@@ -307,8 +254,6 @@
 
 	.card-arrow {
 		transform: none;
-=======
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 	}
 
 	.card-container-right {
@@ -318,7 +263,6 @@
 	.card-showcase-container-right {
 		width: 70vw;
 		margin-top: 50px;
-<<<<<<< HEAD
 		justify-content: center;
 	}
 
@@ -331,7 +275,5 @@
 		width: 300px;
 		height: 650px;
 		border: solid #181818 2px;
-=======
->>>>>>> a981316ede60450b45dde5c76fe031833c593e45
 	}
 }
