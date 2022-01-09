@@ -1,6 +1,7 @@
 import '../MainCSS/HumbleBragSection.css';
 import React from 'react';
 
+<<<<<<< HEAD
 //arrow import
 
 import arrow from '../Assets/Images/arrow.png'
@@ -209,6 +210,12 @@ export default class HumbleBragSection extends React.Component{
     render(){
 
 
+=======
+
+export default class HumbleBragSection extends React.Component{
+
+    render(){
+>>>>>>> a981316ede60450b45dde5c76fe031833c593e45
         return(
             <div className='main-brag-container'>
 
@@ -220,20 +227,30 @@ export default class HumbleBragSection extends React.Component{
 
                 {/* Truthable Card */}
 
+<<<<<<< HEAD
                 <div className='first-card-container'>
+=======
+                <div className='card-container'>
+>>>>>>> a981316ede60450b45dde5c76fe031833c593e45
                     <div className='card-text-container'>
                         <h1>Truthable</h1>
                         <div className='card-divider'/>
                         <h2>I was in charge of creating an entire mobile UI that was ready to launch! With a team of only two, it's not <em><b>TOO</b></em> shabby, eh?</h2>
                     </div>
                     <div className='card-showcase-container'>
+<<<<<<< HEAD
                         <div className='card-showcase-vertical' onMouseOver={this.truthableHover} onMouseOut={this.truthableUnhover}>
                             <img className='showcase-image' style={{display: this.state.truthableImageShowcase}} src={this.state.TruthableShowcase} alt="Truthable"/>
                             <video className='showcase-video' style={{display: this.state.truthableVideoShowcase}} src={this.state.TruthableShowcase} alt="Truthable" autoPlay/>
+=======
+                        <div className='card-showcase'>
+
+>>>>>>> a981316ede60450b45dde5c76fe031833c593e45
                         </div>
                     </div>
                 </div>  
 
+<<<<<<< HEAD
                 <div className='card-arrow-main-container'>
                     <div className='card-arrow-container'>
                         <img src={this.state.arrow} className='card-arrow' alt="Arrow"/>
@@ -241,18 +258,28 @@ export default class HumbleBragSection extends React.Component{
                     </div>
                 </div>
 
+=======
+>>>>>>> a981316ede60450b45dde5c76fe031833c593e45
                 {/* Glitch Software Card */}
 
                 <div className='card-container-right'>
                     <div className='card-text-container'>
                         <h1>Glitch Software</h1>
                         <div className='card-divider'/>
+<<<<<<< HEAD
                         <h2>Using the provided designs, I brought this idea to life in the form of both a website and a responsive Electron & React powered Windows application. I believe it came out quite alright: Not a single <em><b>glitch</b></em>&nbsp;! </h2>
                     </div>
                     <div className='card-showcase-container-right'>
                         <div className='card-showcase-right' onMouseOver={this.glitchHover} onMouseOut={this.glitchUnhover}>
                             <img className='showcase-image' style={{display: this.state.glitchImageShowcase}} src={this.state.GlitchShowcase} alt="Glitch"/>
                             <video className='showcase-video' style={{display: this.state.glitchVideoShowcase}} src={this.state.GlitchShowcase} alt="Glitch" autoPlay/>
+=======
+                        <h2>Using the provided designs, I brought this idea to life. I believe it came out quite alright: Not a single <em><b>glitch</b></em> ! </h2>
+                    </div>
+                    <div className='card-showcase-container-right'>
+                        <div className='card-showcase-right'>
+
+>>>>>>> a981316ede60450b45dde5c76fe031833c593e45
                         </div>
                     </div>
                 </div>  
@@ -266,9 +293,14 @@ export default class HumbleBragSection extends React.Component{
                         <h2>I was given a design for a landing page. I <em><b>AUTH</b></em> orized myself to add my personal touch and responsiveness to the site.</h2>
                     </div>
                     <div className='card-showcase-container'>
+<<<<<<< HEAD
                         <div className='card-showcase' onMouseOver={this.authpanelHover} onMouseOut={this.authpanelUnhover}>
                             <img className='showcase-image' style={{display: this.state.authpanelImageShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel"/>
                             <video className='showcase-video' style={{display: this.state.authpanelVideoShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel" autoPlay/>
+=======
+                        <div className='card-showcase'>
+
+>>>>>>> a981316ede60450b45dde5c76fe031833c593e45
                         </div>
                     </div>
                 </div>  
@@ -282,9 +314,14 @@ export default class HumbleBragSection extends React.Component{
                         <h2>I created and executed my own design for a website that was used to advertise an up and coming NFT project on the Solana blockchain! I guess you could say I have <em><b>Non-Foilable Tenacity</b></em> !<em><br></br><br></br>In retrospect, that one wasn't very good. I'm still keeping it though.</em>  </h2>
                     </div>
                     <div className='card-showcase-container-right'>
+<<<<<<< HEAD
                         <div className='card-showcase-right' onMouseOver={this.fluftzHover} onMouseOut={this.fluftzUnhover}>
                             <img className='showcase-image' style={{display: this.state.fluftzImageShowcase}} src={this.state.FluftzShowcase} alt="Fluftz"/>
                             <video className='showcase-video' style={{display: this.state.fluftzVideoShowcase}} src={this.state.FluftzShowcase} alt="Fluftz" autoPlay/>
+=======
+                        <div className='card-showcase-right'>
+
+>>>>>>> a981316ede60450b45dde5c76fe031833c593e45
                         </div>
                     </div>
                 </div> 
