@@ -1,0 +1,279 @@
+.main-brag-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card-container {
+	width: 70vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 175px;
+}
+
+.first-card-container {
+	width: 70vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-text-container {
+	display: flex;
+	flex-direction: column;
+	width: 25vw;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.card-text-container > h1 {
+	color: #181818;
+	font-size: 36px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.card-divider {
+	width: 70%;
+	height: 3px;
+	background-color: #181818;
+	opacity: 0.5;
+	border-radius: 3px;
+	margin-bottom: 25px;
+}
+
+.card-text-container > h2 {
+	color: #181818;
+	font-size: 24px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	text-align: left;
+}
+
+.card-arrow-main-container {
+	width: 70vw;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 75px;
+	margin-top: 50px;
+}
+
+.card-arrow-container {
+	width: 15vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card-arrow-container > h1 {
+	color: #181818;
+	opacity: 0.5;
+	font-size: 24px;
+	font-family: 'Shadows Into Light', cursive;
+	font-weight: 600;
+	text-align: left;
+}
+
+.card-arrow {
+	height: 100px;
+	width: 100px;
+	object-fit: contain;
+	opacity: 0.5;
+	transform: scaleX(-1) rotate(120deg);
+}
+
+.card-showcase-container {
+	width: 35vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+}
+
+.card-showcase {
+	width: 550px;
+	height: 450px;
+	border-radius: 16px;
+	transform: rotate3d(0, -1, 0, 10deg);
+	transition: 500ms;
+	background-color: #181818;
+}
+
+.card-showcase-vertical {
+	width: 300px;
+	height: 650px;
+	border-radius: 16px;
+	transform: rotate3d(0, -1, 0, 10deg);
+	transition: 500ms;
+	border: solid #181818 2px;
+}
+
+.card-showcase:hover {
+	cursor: default;
+	transform: rotate3d(0, 0, 0, 0deg);
+	transform: scale(1.1);
+}
+
+.card-showcase-vertical:hover {
+	cursor: default;
+	transform: rotate3d(0, 0, 0, 0deg);
+	transform: scale(1.1);
+}
+
+.showcase-image {
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+	border-radius: 16px;
+}
+
+.showcase-video {
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+	border-radius: 16px;
+}
+
+/* Now for the cards that start with the showcase on the left. I'll call them -right. Because I want to. Don't judge me. */
+
+.card-container-right {
+	width: 70vw;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 175px;
+}
+
+.card-showcase-container-right {
+	width: 35vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	perspective: 1000px;
+}
+
+.card-showcase-right {
+	width: 550px;
+	height: 450px;
+	border-radius: 16px;
+	background-color: #181818;
+	transform: rotate3d(0, 1, 0, 10deg);
+	transition: 500ms;
+	background-size: contain;
+}
+
+.card-showcase-right:hover {
+	cursor: default;
+	transform: rotate3d(0, 0, 0, 0deg);
+	transform: scale(1.1);
+	background-size: contain;
+}
+
+/* Mobile Time. iPad sizing first. */
+
+@media screen and (max-width: 1030px) {
+	.card-showcase-container {
+		perspective: none;
+	}
+
+	.card-showcase {
+		transform: none;
+		height: 350px;
+		width: 350px;
+	}
+
+	.card-showcase-container-right {
+		perspective: none;
+	}
+
+	.card-showcase-right {
+		transform: none;
+		height: 350px;
+		width: 350px;
+	}
+	.card-arrow-container {
+		align-items: flex-end;
+	}
+	.card-arrow {
+		transform: scaleX(-1) rotate(90deg);
+	}
+}
+
+/* Then for mobiles, mainly basing around iPhone X and complementary android model as the standard. */
+
+@media screen and (max-width: 700px) {
+	.first-card-container {
+		flex-direction: column;
+	}
+	.card-container {
+		flex-direction: column;
+	}
+
+	.card-text-container {
+		width: 70vw;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card-text-container > h1 {
+		text-align: center;
+	}
+
+	.card-text-container > h2 {
+		text-align: center;
+	}
+
+	.card-showcase-container {
+		width: 70vw;
+		margin-top: 50px;
+		justify-content: center;
+	}
+
+	.card-arrow-main-container {
+		justify-content: center;
+	}
+
+	.card-arrow-container {
+		width: 60vw;
+		justify-content: center;
+		align-items: center;
+	}
+	.card-arrow-container > h1 {
+		text-align: center;
+	}
+
+	.card-arrow {
+		transform: none;
+	}
+
+	.card-container-right {
+		flex-direction: column;
+	}
+
+	.card-showcase-container-right {
+		width: 70vw;
+		margin-top: 50px;
+		justify-content: center;
+	}
+
+	.card-showcase {
+		width: 300px;
+		height: 650px;
+	}
+
+	.card-showcase-right {
+		width: 300px;
+		height: 650px;
+		border: solid #181818 2px;
+	}
+}
