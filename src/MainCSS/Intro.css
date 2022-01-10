@@ -102,7 +102,7 @@
 	content: '|';
 	position: absolute;
 	color: black;
-	right: 0;
+	right: -5px;
 	animation: caret infinite;
 	animation-duration: 1s;
 	animation-timing-function: steps(1, end);
@@ -137,6 +137,7 @@
 		width: 14em;
 	}
 }
+
 @keyframes typewriter4 {
 	0%,
 	75% {
@@ -163,7 +164,7 @@
 	display: flex;
 	width: 40vw;
 	height: 95px;
-	margin-top: 150px;
+	margin-top: 100px;
 	justify-content: space-around;
 	align-items: center;
 
@@ -216,6 +217,7 @@
 
 .scroller-text-container > h3 {
 	color: #181818;
+	opacity: 0.5;
 	font-size: 20px;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
@@ -324,5 +326,21 @@
 	.scroller-text-container {
 		width: 60vw;
 		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.intro-text > h1 {
+		font-size: 48px;
+	}
+
+	.blurb-dynamic-text3 {
+		max-width: 95vw;
+	}
+	.intro-blurb > h3 {
+		font-size: 32px;
+	}
+	.intro-blurb {
+		min-height: 150px;
 	}
 }

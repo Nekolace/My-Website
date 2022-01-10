@@ -54,6 +54,7 @@ export default class HumbleBragSection extends React.Component{
     componentDidMount(){
         this.widthCheck();
         window.addEventListener('resize', this.widthCheck);
+        window.addEventListener('scroll', this.scrollEvent);
     }
 
 
@@ -206,6 +207,30 @@ export default class HumbleBragSection extends React.Component{
 
 
 
+    scrollEvent = () => {
+        if(this.state.width < 700){
+            this.setState({
+                TruthableShowcase: TruthableImage,
+                truthableVideoShowcase: "none",
+                truthableImageShowcase: "flex",
+
+                GlitchShowcase: GlitchMobileImage,
+                glitchVideoShowcase: "none",
+                glitchImageShowcase: "flex",
+
+                AuthpanelShowcase: AuthpanelMobileImage,
+                authpanelVideoShowcase: "none",
+                authpanelImageShowcase: "flex",
+
+                FluftzShowcase: FluftzMobileImage,
+                fluftzVideoShowcase: "none",
+                fluftzImageShowcase: "flex"
+            })
+        }
+    }
+
+
+
     render(){
 
 
@@ -229,7 +254,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container'>
                         <div className='card-showcase-vertical' onMouseOver={this.truthableHover} onMouseOut={this.truthableUnhover}>
                             <img className='showcase-image' style={{display: this.state.truthableImageShowcase}} src={this.state.TruthableShowcase} alt="Truthable"/>
-                            <video className='showcase-video' style={{display: this.state.truthableVideoShowcase}} src={this.state.TruthableShowcase} alt="Truthable" autoPlay muted/>
+                            <video className='showcase-video' style={{display: this.state.truthableVideoShowcase}} src={this.state.TruthableShowcase} alt="Truthable" autoPlay loop muted playsInline/>
                         </div>
                     </div>
                 </div>  
@@ -252,7 +277,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container-right'>
                         <div className='card-showcase-right' onMouseOver={this.glitchHover} onMouseOut={this.glitchUnhover}>
                             <img className='showcase-image' style={{display: this.state.glitchImageShowcase}} src={this.state.GlitchShowcase} alt="Glitch"/>
-                            <video className='showcase-video' style={{display: this.state.glitchVideoShowcase}} src={this.state.GlitchShowcase} alt="Glitch" autoPlay muted />
+                            <video className='showcase-video' style={{display: this.state.glitchVideoShowcase}} src={this.state.GlitchShowcase} alt="Glitch" autoPlay loop muted playsInline />
                         </div>
                     </div>
                 </div>  
@@ -268,7 +293,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container'>
                         <div className='card-showcase' onMouseOver={this.authpanelHover} onMouseOut={this.authpanelUnhover}>
                             <img className='showcase-image' style={{display: this.state.authpanelImageShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel"/>
-                            <video className='showcase-video' style={{display: this.state.authpanelVideoShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel" autoPlay muted/>
+                            <video className='showcase-video' style={{display: this.state.authpanelVideoShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel" autoPlay loop muted playsInline />
                         </div>
                     </div>
                 </div>  
@@ -284,7 +309,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container-right'>
                         <div className='card-showcase-right' onMouseOver={this.fluftzHover} onMouseOut={this.fluftzUnhover}>
                             <img className='showcase-image' style={{display: this.state.fluftzImageShowcase}} src={this.state.FluftzShowcase} alt="Fluftz"/>
-                            <video className='showcase-video' style={{display: this.state.fluftzVideoShowcase}} src={this.state.FluftzShowcase} alt="Fluftz" autoPlay muted/>
+                            <video className='showcase-video' style={{display: this.state.fluftzVideoShowcase}} src={this.state.FluftzShowcase} alt="Fluftz" autoPlay loop muted playsInline />
                         </div>
                     </div>
                 </div> 
