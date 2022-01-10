@@ -232,6 +232,10 @@ export default class HumbleBragSection extends React.Component{
 
 
     render(){
+        
+        const GlitchPoster = this.state.width < 700 ? GlitchMobileImage : GlitchImage,
+        AuthpanelPoster = this.state.width < 700 ? AuthpanelMobileImage : AuthpanelImage,
+        FluftzPoster = this.state.width < 700 ? FluftzMobileImage : FluftzImage;
 
 
         return(
@@ -254,7 +258,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container'>
                         <div className='card-showcase-vertical' onMouseOver={this.truthableHover} onMouseOut={this.truthableUnhover}>
                             <img className='showcase-image' style={{display: this.state.truthableImageShowcase}} src={this.state.TruthableShowcase} alt="Truthable"/>
-                            <video className='showcase-video' style={{display: this.state.truthableVideoShowcase}} src={this.state.TruthableShowcase} alt="Truthable" autoPlay loop muted playsInline/>
+                            <video className='showcase-video' style={{display: this.state.truthableVideoShowcase}} src={this.state.TruthableShowcase} alt="Truthable" autoPlay loop muted playsInline preload='auto' poster={TruthableImage}/>
                         </div>
                     </div>
                 </div>  
@@ -277,7 +281,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container-right'>
                         <div className='card-showcase-right' onMouseOver={this.glitchHover} onMouseOut={this.glitchUnhover}>
                             <img className='showcase-image' style={{display: this.state.glitchImageShowcase}} src={this.state.GlitchShowcase} alt="Glitch"/>
-                            <video className='showcase-video' style={{display: this.state.glitchVideoShowcase}} src={this.state.GlitchShowcase} alt="Glitch" autoPlay loop muted playsInline />
+                            <video className='showcase-video' style={{display: this.state.glitchVideoShowcase}} src={this.state.GlitchShowcase} alt="Glitch" autoPlay loop muted playsInline preload='auto' poster={GlitchPoster} />
                         </div>
                     </div>
                 </div>  
@@ -293,7 +297,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container'>
                         <div className='card-showcase' onMouseOver={this.authpanelHover} onMouseOut={this.authpanelUnhover}>
                             <img className='showcase-image' style={{display: this.state.authpanelImageShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel"/>
-                            <video className='showcase-video' style={{display: this.state.authpanelVideoShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel" autoPlay loop muted playsInline />
+                            <video className='showcase-video' style={{display: this.state.authpanelVideoShowcase}} src={this.state.AuthpanelShowcase} alt="Authpanel" autoPlay loop muted playsInline preload='auto' poster={AuthpanelPoster} />
                         </div>
                     </div>
                 </div>  
@@ -309,7 +313,7 @@ export default class HumbleBragSection extends React.Component{
                     <div className='card-showcase-container-right'>
                         <div className='card-showcase-right' onMouseOver={this.fluftzHover} onMouseOut={this.fluftzUnhover}>
                             <img className='showcase-image' style={{display: this.state.fluftzImageShowcase}} src={this.state.FluftzShowcase} alt="Fluftz"/>
-                            <video className='showcase-video' style={{display: this.state.fluftzVideoShowcase}} src={this.state.FluftzShowcase} alt="Fluftz" autoPlay loop muted playsInline />
+                            <video className='showcase-video' style={{display: this.state.fluftzVideoShowcase}} src={this.state.FluftzShowcase} alt="Fluftz" autoPlay loop muted playsInline preload='auto' poster={FluftzPoster} />
                         </div>
                     </div>
                 </div> 
